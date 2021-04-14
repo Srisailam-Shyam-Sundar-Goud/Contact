@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storing Contacts</title>
+</head>
+<h1 align="center"> Details That are Stored </h1>
+<body>
+    <table align="center" cellpadding='8' border="3">
+        <tr>
+            <th>Contact Name </th>
+            <th>Contact Number </th>
+            <th>Contact Address </th>
+            <th>Contact Email-Id </th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.Name }}</td>
+            <td>{{ item.Number }}</td>
+            <td>{{ item.Address }}</td>
+            <td>{{ item.email }}</td>
+        </tr>
+        {% endfor %}
+        <br>
+        {% for item1 in cre1 %}
+        <tr>
+            <td>{{ item1.name1 }}</td>
+            <td>{{ item1.number1 }}</td>
+            <td>{{ item1.address1 }}</td>
+            <td>{{ item1.email12 }}</td>
+        </tr>
+        {% endfor %}
+
+
+    </table> <h1 align="center">
+    Click<a href="/display">here</a>to add new contact
+    </h1>
+</body>
+</html>
